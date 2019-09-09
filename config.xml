@@ -43,7 +43,7 @@
     <!-- =========================================== -->
 
     
-    <icon src="static/img/icone.png" />
+    <icon src="static/img/icon.png" />
     <plugin name="cordova-plugin-whitelist" />
 
 </widget>
