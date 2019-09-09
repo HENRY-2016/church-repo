@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title> SMART EDUC</title>
+        <script  scr="static/js/bootstrap.js"></script>
+        <script  scr="static/js/bootstrap.min.js"></script>
+        <script  src="static/js/main.js" ></script>
+
+        <link rel="stylesheet" type="text/css" href="static/css/chr.css"/>
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css"/>
+
+    </head>
+        <body >
+            <div  id= "Navigetion" class="header">
+                    <!-- ======= CLOSE ====== -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNavi()"><label style="background-color: #CDC1C5; border-radius: 50px;"> &times;</label></a><!-- closs the navi -->
+                        <center style="background-color: #CDC1C5; border-radius: 50px" >
+                            <a href="index.html">  Home</a>
+                            <a href="kizito.html">St.Kizito</a>
+                            <a href="pio.html">St.Padre pio</a>
+                            <a href="kaloli.html">St.Kaloli Lwanga</a> 
+            
+                            </center><br>
+                            <center style="background-color: #CDC1C5; border-radius: 50px" >
+                                <a href="guild.html">Guild</a>
+                                <a href="rosary.html">Rosary</a>
+                                <a href="readings.html">Readings</a>
+                                <a href="reflection.html">Reflection</a>
+                                <a href="Announcements.html">Announcements</a>
+                            </center>
+                </div>
+                <p class="Bweyalabel">BWEYA CATHOLIC <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUB-PARISH</p>
+                <div id="NaviDiv">
+                    <!-- ==== OPEN  ======= -->
+                        <span style="font-size:45px;cursor:pointer; color:white;" class="MenuBtn" onclick="openMenus()">
+                            <!-- my open icon -->
+                            <img src="static/icons/log.png" class="LogIconImg">
+                        </span>
+                </div>
+                <script>
+                    function openMenus()
+                        {document.getElementById("Navigetion").style.width = "240px"}
+                    function closeNavi ()
+                        {document.getElementById("Navigetion").style.width = "0"}  
+                </script>
+
+            <div class="Body"> <!-- main body div -->
+        <!--============ START MY BODY ======================= -->
+            
+                <div class="ReflectionScreenBG">
+                <br><br>
+                <button onclick="getGlorious()" class="main_btn">Glorious Mysteries </button><br><br>
+                <!-- =====================  ============== -->
+                <button onclick="getSorrowful()" class="main_btn">Sorrowful Mysteries </button><br><br>
+                <!-- =====================  ============== -->
+                <button onclick="getLuminous()" class="main_btn">Luminous Mysteries </button><br><br>
+                <!-- =====================  ============== -->
+                <button onclick="getJoyful()" class="main_btn">Joyful Mysteries </button>
+                <br><br>
+                <!-- =====================  ============== -->
+                <button onclick="getcross()" class="main_btn">Way of the cross </button>
+            </div><!-- end main body -->               
+        </body>
+</html>

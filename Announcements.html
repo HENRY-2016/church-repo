@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title> BWEYA CHURCH</title>
+
+        <script  src="static/js/main.js" ></script>
+        <link rel="stylesheet" type="text/css" href="static/css/chr.css"/>
+
+    </head>
+        <body onload="Load_Offline_Data ()">
+            <div  id= "Navigetion" class="header">
+                    <!-- ======= CLOSE ====== -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNavi()"><label style="background-color: #CDC1C5; border-radius: 50px;"> &times;</label></a><!-- closs the navi -->
+                        <center style="background-color: #CDC1C5; border-radius: 50px" >
+                            <a href="index.html">  Home</a>
+                            <a href="kizito.html">St.Kizito</a>
+                            <a href="pio.html">St.Padre pio</a>
+                            <a href="kaloli.html">St.Kaloli Lwanga</a> 
+            
+                            </center><br>
+                            <center style="background-color: #CDC1C5; border-radius: 50px" >
+                                <a href="guild.html">Guild</a>
+                                <a href="rosary.html">Rosary</a>
+                                <a href="readings.html">Readings</a>
+                                <a href="reflection.html">Reflection</a>
+                                <a href="Announcements.html">Announcements</a>
+                            </center>
+                </div>
+                <p class="Bweyalabel">BWEYA CATHOLIC <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUB-PARISH</p>
+                <div id="NaviDiv">
+                    <!-- ==== OPEN  ======= -->
+                        <span style="font-size:45px;cursor:pointer; color:white;" class="MenuBtn" onclick="openMenus()">
+                            <!-- my open icon -->
+                            <img src="static/icons/log.png" class="LogIconImg">
+                        </span>
+                </div>
+                <script>
+                    function openMenus()
+                        {document.getElementById("Navigetion").style.width = "240px"}
+                    function closeNavi ()
+                        {document.getElementById("Navigetion").style.width = "0"}  
+                </script>
+    
+        <div class="Body">
+<!--============ START MY BODY ======================= -->
+<!---================================================================-->
+            <div class="HideThisSpace1"></div>
+            <div class="SecReadingClass">
+                    <br><label class="RdingTitle"><center>Parish</center></label><br>
+                    <button class="accordion"><center>Today</center></button>
+                    <div class="panel">
+                        <div id="New_Announce_BtnDiv">
+                            <label class="WhatsNewBtn" onclick="load_parish_annonce()"> New </label>
+                        </div>
+                        <div id="saveBtnDIV">
+                                <label class="WhatsNewBtn" onclick="Save_Todays_parish_annouce()"> Save </label>
+                            </div> <br><br>
+                        
+                        <div id="parish_anounce">
+                            <p>
+                                Waiting for new announcements.........
+                            </p>
+                            <br><br>
+                        </div>
+                    </div>
+
+                    <button class="accordion"><center>Last Sunday</center></button>
+                    <div class="panel">
+                        <div id="New_Announce_BtnDiv">
+                                <label class="WhatsNewBtn" onclick="load_parish_annonce_past()"> New </label>
+                            </div>
+                            <div id="saveBtnDIV">
+                                    <label class="WhatsNewBtn" onclick="Save_parish_annouce_past()"> Save </label>
+                                </div> <br><br>
+                            
+                            <div id="parish_anounce_past">
+                                <p>
+                                    Last sunday announcements.........
+                                </p>
+                                <br><br>
+                            </div>
+                    </div>
+                    
+            </div>
+            <div class="HideThisSpace2"></div>
+        <!-- ========================================= -->
+        <div class="SecReadingClass">
+            <br><label class="RdingTitle"><center>Bweya</center></label><br>
+            <button class="accordion"><center>Main</center></button>
+            <div class="panel">
+                <div id="New_Announce_BtnDiv">
+                    <label class="WhatsNewBtn" onclick="load_bweya_annonce_main()"> New </label>
+                </div>
+                <div id="saveBtnDIV">
+                        <label class="WhatsNewBtn" onclick="Save_bweya_annouce_main()"> Save </label>
+                    </div> <br><br>
+                
+                <div id="bweya_anounce_main">
+                    <p>
+                    from sub parish announcements.........
+                    </p>
+                    <br><br>
+                </div>
+            </div>
+
+            <button class="accordion"><center>St. Kizito</center></button>
+            <div class="panel">
+                <div id="New_Announce_BtnDiv">
+                        <label class="WhatsNewBtn" onclick="load_bweya_annonce_kizito()"> New </label>
+                    </div>
+                    <div id="saveBtnDIV">
+                            <label class="WhatsNewBtn" onclick="Save_bweya_annouce_kizito()"> Save </label>
+                        </div> <br><br>
+                        <label class="WhatsNewBtn"> <center> St. kizito</center></label> 
+                    <div id="bweya_anounce_kizito">
+                        <p>
+                            St. kizito announcements.........
+                        </p>
+                        <br><br>
+                    </div>
+            </div>
+
+            <button class="accordion"><center>St.Padre pio</center></button>
+            <div class="panel">
+                <div id="New_Announce_BtnDiv">
+                        <label class="WhatsNewBtn" onclick="load_bweya_annonce_pio()"> New </label>
+                    </div>
+                    <div id="saveBtnDIV">
+                            <label class="WhatsNewBtn" onclick="Save_bweya_annouce_pio()"> Save </label>
+                        </div> <br><br>
+                        <label class="WhatsNewBtn"> <center> St.Padre pio</center></label> 
+                    <div id="bweya_anounce_pio">
+                        <p>
+                            St.Padre pio announcements.........
+                        </p>
+                        <br><br>
+                    </div>
+            </div>
+
+            <button class="accordion"><center>St.Kaloli Lwanga</center></button>
+            <div class="panel">
+                <div id="New_Announce_BtnDiv">
+                        <label class="WhatsNewBtn" onclick="load_bweya_annonce_kaloli()"> New </label>
+                    </div>
+                    <div id="saveBtnDIV">
+                            <label class="WhatsNewBtn" onclick="Save_bweya_annouce_kaloli()"> Save </label>
+                        </div> <br><br>
+                        <label class="WhatsNewBtn"> <center> St.Kaloli Lwanga</center></label> 
+                    <div id="bweya_anounce_pio">
+                        <p>
+                            St.Padre pio announcements.........
+                        </p>
+                        <br><br>
+                    </div>
+            </div>
+            
+        </div>
+                    <script>
+                            var acc = document.getElementsByClassName("accordion");
+                            var i;
+
+                            for (i = 0; i < acc.length; i++) {
+                                acc[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var panel = this.nextElementSibling;
+                                    if (panel.style.display === "block") {
+                                        panel.style.display = "none";
+                                    } else {
+                                        panel.style.display = "block";
+                                    }
+                                });
+                            }
+                    </script> 
+        
+            <!---===================================================================-->
+        </div>
+        </body>
+
+</html>

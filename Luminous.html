@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+    <head> 
+            <meta charset="utf-8">
+            <title> SMART EDUC</title>
+            <link rel="stylesheet" type="text/css" href="../static/css/chr.css"/>
+            <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+            <script src="../static/js/jquery.min.js"></script>
+            <script src="../static/js/bootstrap.min.js"></script>
+    </head>
+        <body>
+        {% include 'navi.html' %}
+<!--============ START MY BODY ======================= -->
+            <div class="Body"> 
+ 
+            <!---================================================================-->
+          
+            <div class="FirstReadingClass">
+                    <br><label class="RdingTitle"><center>The Luminous Mysteries</center></label><br>
+                <!-- //////////// -->
+                    <button class="accordion"><center>
+                        First Mystery
+                            <br><label class="misteryLables">The Baptism in the Jordan</label>
+                    </center></button>
+                    <div class="panel" style="background-color:#E6E6FA;">
+                            <div id="myCarousel" class="carousel slide">
+                            <br>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="../static/img/luminus/1.01.png" style="height: 355px; width: 100%;"> </div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/1.02.png" style="height: 355px; width: 100%;"></div>
+                                        
+                                    
+                                        
+                                </div><br>
+                                <!-- Controls buttons -->
+                                <div style="text-align:left;">
+                                    <input type="button" class="btn prev-slide" value="Previous" style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px;">
+
+                                  
+                                    &nbsp;&nbsp;
+                                    <input type="button" class="btn next-slide" value="Next " style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px; float: right;">  
+                                </div>
+                            </div><!-- End of carousel div -->
+                    </div> 
+                    <script>
+                    $(function()
+                            {
+                                // Initializes the carousel
+                                $(".start-slide").click(function(){
+                                $("#myCarousel").carousel('cycle'); });
+
+                                // Cycles to the previous item
+                                $(".prev-slide").click(function(){
+                                $("#myCarousel").carousel('prev'); });
+
+                                // Cycles to the next item
+                                $(".next-slide").click(function(){
+                                $("#myCarousel").carousel('next'); });
+
+                            });
+                    </script>
+        <!-- ========================================= -->
+
+                <!-- //////////// -->
+                    <button class="accordion"><center>
+                        Second Mystery
+                            <br><label class="misteryLables">The Wedding at Cana</label>
+                    </center></button>
+                    <div class="panel" style="background-color:#E6E6FA;">
+                            <div id="myCarousel2" class="carousel slide">
+                            <br>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="../static/img/luminus/2.00.png" style="height: 355px; width: 100%;"> </div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/2.01.png" style="height: 355px; width: 100%;"></div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/2.02.png" style="height: 355px; width: 100%;"></div>
+
+                                    <div class="item">
+                                        <img src="../static/img/luminus/2.03.png" style="height: 355px; width: 100%;"></div>
+                                        
+                                </div><br>
+                                <!-- Controls buttons -->
+                                <div style="text-align:left;">
+                                    <input type="button" class="btn prev-slide" value="Previous" style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px;">
+
+                                    &nbsp;&nbsp;
+                                    <input type="button" class="btn next-slide" value="Next " style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px; float: right;">  
+                                </div>
+                            </div><!-- End of carousel div -->
+                    </div>
+                    <script>
+                        $(function()
+                        {
+                            // Initializes the carousel
+                            $(".start-slide").click(function(){
+                            $("#myCarousel2").carousel('cycle'); });
+
+                            // Cycles to the previous item
+                            $(".prev-slide").click(function(){
+                            $("#myCarousel2").carousel('prev'); });
+
+                            // Cycles to the next item
+                            $(".next-slide").click(function(){
+                            $("#myCarousel2").carousel('next'); });
+
+                        });
+                    </script>
+        <!-- ========================================= -->
+                <!-- //////////// -->
+                    <button class="accordion"><center>
+                        Third Mystery
+                            <br><label class="misteryLables">The Proclamation of the Kingdom</label>
+                    </center></button>
+                    <div class="panel" style="background-color:#E6E6FA;">
+                            <div id="myCarousel3" class="carousel slide">
+                            <br>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="../static/img/luminus/3.00.png" style="height: 355px; width: 100%;"> </div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/3.01.png" style="height: 355px; width: 100%;"></div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/3.02.png" style="height: 355px;"></div>
+
+                                    <div class="item">
+                                        <img src="../static/img/luminus/3.03.png" style="height: 355px;"></div>
+
+                                        
+                                </div><br>
+                                <!-- Controls buttons -->
+                                <div style="text-align:left;">
+                                    <input type="button" class="btn prev-slide" value="Previous" style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px;">
+
+                                    &nbsp;&nbsp;
+                                    <input type="button" class="btn next-slide" value="Next " style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px; float: right;">  
+                                </div>
+                            </div><!-- End of carousel div -->
+                    </div>
+                    <script>
+                        $(function()
+                        {
+                            // Initializes the carousel
+                            $(".start-slide").click(function(){
+                            $("#myCarousel3").carousel('cycle'); });
+
+                            // Cycles to the previous item
+                            $(".prev-slide").click(function(){
+                            $("#myCarousel3").carousel('prev'); });
+
+                            // Cycles to the next item
+                            $(".next-slide").click(function(){
+                            $("#myCarousel3").carousel('next'); });
+
+                        });
+                    </script>
+        <!-- ========================================= -->
+                <!-- //////////// -->
+                    <button class="accordion"><center>
+                        Fourth Mystery
+                            <br><label class="misteryLables">The Transfiguration</label>
+                    </center></button>
+                    <div class="panel" style="background-color:#E6E6FA;">
+                            <div id="myCarousel4" class="carousel slide">
+                            <br>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="../static/img/luminus/4.00.png" style="height: 355px; width: 100%;"> </div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/4.01.png" style="height: 355px; width: 100%;"></div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/4.02.png" style="height: 355px; width: 100%;"></div>
+                                        
+                                </div><br>
+                                <!-- Controls buttons -->
+                                <div style="text-align:left;">
+                                    <input type="button" class="btn prev-slide" value="Previous" style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px;">
+
+                                    &nbsp;&nbsp;
+                                    <input type="button" class="btn next-slide" value="Next " style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px; float: right;">  
+                                </div>
+                            </div><!-- End of carousel div -->
+                    </div>
+                    <script>
+                        $(function()
+                        {
+                            // Initializes the carousel
+                            $(".start-slide").click(function(){
+                            $("#myCarousel4").carousel('cycle'); });
+
+                            // Cycles to the previous item
+                            $(".prev-slide").click(function(){
+                            $("#myCarousel4").carousel('prev'); });
+
+                            // Cycles to the next item
+                            $(".next-slide").click(function(){
+                            $("#myCarousel4").carousel('next'); });
+
+                        });
+                    </script>
+        <!-- ========================================= -->
+                <!-- //////////// -->
+                    <button class="accordion"><center>
+                        Fifth Mystery
+                            <br><label class="misteryLables">The Institution of the Eucharist</label>
+                    </center></button>
+                    <div class="panel" style="background-color:#E6E6FA;">
+                            <div id="myCarousel5" class="carousel slide">
+                            <br>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="../static/img/luminus/5.00.png" style="height: 355px; width: 100%;"> </div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/5.01.png" style="height: 355px; width: 100%;"></div>
+                                        
+                                    <div class="item">
+                                        <img src="../static/img/luminus/5.03.png" style="height: 355px;"></div>
+                                    <div class="item">
+                                        <img src="../static/img/luminus/5.04.png" style="height: 355px;"></div>
+                                    
+                                        
+                                </div><br>
+                                <!-- Controls buttons -->
+                                <div style="text-align:left;">
+                                    <input type="button" class="btn prev-slide" value="Previous" style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px;">
+
+                                    &nbsp;&nbsp;
+                                    <input type="button" class="btn next-slide" value="Next " style="background-color:#CDC1C5; color: blue; border-radius: 50px; height: 45px; width: 85px; float: right;">  
+                                </div>
+                            </div><!-- End of carousel div -->
+                    </div>
+                    <script>
+                        $(function()
+                        {
+                            // Initializes the carousel
+                            $(".start-slide").click(function(){
+                            $("#myCarousel5").carousel('cycle'); });
+
+                            // Cycles to the previous item
+                            $(".prev-slide").click(function(){
+                            $("#myCarousel5").carousel('prev'); });
+
+                            // Cycles to the next item
+                            $(".next-slide").click(function(){
+                            $("#myCarousel5").carousel('next'); });
+
+                        });
+                    </script>
+        <!-- ========================================= -->
+            </div><!-- fisrtclass div -->
+             
+<!---=======================================================-->
+            <!-- OPEN MY ACCORDITIONS -->
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+        </body>
+</html>
